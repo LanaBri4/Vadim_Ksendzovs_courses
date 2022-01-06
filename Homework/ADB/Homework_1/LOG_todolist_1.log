@@ -1,0 +1,27 @@
+3:12-21 09:15:00.472 26999 26999 E AndroidRuntime: Process: com.android.todolist, PID: 26999
+4:12-21 09:15:00.472 26999 26999 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.todolist/com.android.todolist.ListActivity}: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+19:12-21 09:15:00.472 26999 26999 E AndroidRuntime: 	at com.android.todolist.ListActivity.onCreate(ListActivity.kt:40)
+26:12-21 10:17:19.500  8773  8773 E AndroidRuntime: Process: com.android.todolist, PID: 8773
+28:12-21 10:17:19.500  8773  8773 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+29:12-21 10:17:19.500  8773  8773 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+48:12-21 10:18:03.767  9166  9166 E AndroidRuntime: Process: com.android.todolist, PID: 9166
+50:12-21 10:18:03.767  9166  9166 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+51:12-21 10:18:03.767  9166  9166 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+70:12-21 10:18:29.947 11029 11029 E AndroidRuntime: Process: com.android.todolist, PID: 11029
+72:12-21 10:18:29.947 11029 11029 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+73:12-21 10:18:29.947 11029 11029 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+92:12-21 10:20:01.753 11227 11227 E AndroidRuntime: Process: com.android.todolist, PID: 11227
+94:12-21 10:20:01.753 11227 11227 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+95:12-21 10:20:01.753 11227 11227 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+114:12-21 11:14:24.124 15635 15635 E AndroidRuntime: Process: com.android.todolist, PID: 15635
+116:12-21 11:14:24.124 15635 15635 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+117:12-21 11:14:24.124 15635 15635 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+136:12-21 11:14:55.410 21041 21041 E AndroidRuntime: Process: com.android.todolist, PID: 21041
+138:12-21 11:14:55.410 21041 21041 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+139:12-21 11:14:55.410 21041 21041 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+188:12-22 10:11:27.043  8336  8336 E AndroidRuntime: Process: com.android.todolist, PID: 8336
+191:12-22 10:11:27.043  8336  8336 E AndroidRuntime: 	at com.android.todolist.MyAdapter$onBindViewHolder$1.onClick(MyAdapter.kt:58)
+204:12-22 11:02:24.761 13812 13812 E AndroidRuntime: Process: com.android.todolist, PID: 13812
+206:12-22 11:02:24.761 13812 13812 E AndroidRuntime: 	at com.android.todolist.MainActivity.ordenarAZ(MainActivity.kt:196)
+207:12-22 11:02:24.761 13812 13812 E AndroidRuntime: 	at com.android.todolist.MainActivity.onNavigationItemSelected(MainActivity.kt:86)
+226:12-22 11:03:13.918  6953  6953 E AndroidRuntime: Process: com.android.todolist, PID: 6953
