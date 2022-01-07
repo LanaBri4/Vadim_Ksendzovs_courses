@@ -11,7 +11,7 @@
  6. Вывести имя и email пользователей
  select name, email from students
  7. Вывести id, имя, email и дату создания пользователей
- select id, name, email from students
+ select id, name, email, create_on from students
  8. Вывести пользователей где password 12333
  select * from students where password = '12333'
  9. Вывести пользователей которые были созданы 2021-03-26 00:00:00
