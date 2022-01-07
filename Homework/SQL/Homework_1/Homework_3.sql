@@ -1,4 +1,4 @@
---1. Вывести всех работников чьи зарплаты есть в базе, вместе с зарплатами.
+--1. Вывести всех работников чьи зарплаты есть в базе вместе с зарплатами.
 select employee_name, monthly_salary 
 from (employees e
 join employee_salary es on e.id = es.employee_id) as ees
@@ -68,14 +68,14 @@ join roles_employee re on e.id = re.employee_id) as er
 join roles r on er.role_id = r.id)
 where role_name like '%Manual QA engineer%';
 
---11. Вывести имена и должность автоматизаторов QA
+--11. Вывести имена и должность автоматизаторов QA.
 select employee_name, role_name 
 from ((employees e 
 join roles_employee re on e.id = re.employee_id) as er
 join roles r on er.role_id = r.id)
 where role_name like '%Automation QA%';
 
---12. Вывести имена и зарплаты Junior специалистов
+--12. Вывести имена и зарплаты Junior специалистов.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -91,7 +91,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---13. Вывести имена и зарплаты Middle специалистов
+--13. Вывести имена и зарплаты Middle специалистов.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -107,7 +107,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---14. Вывести имена и зарплаты Senior специалистов
+--14. Вывести имена и зарплаты Senior специалистов.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -123,7 +123,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---15. Вывести зарплаты Java разработчиков
+--15. Вывести зарплаты Java разработчиков.
 select distinct monthly_salary as salary 
 from salary s 
 join (select salary_id
@@ -139,7 +139,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---16. Вывести зарплаты Python разработчиков
+--16. Вывести зарплаты Python разработчиков.
 select distinct monthly_salary as salary 
 from salary s 
 join (select salary_id
@@ -155,7 +155,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---17. Вывести имена и зарплаты Junior Python разработчиков
+--17. Вывести имена и зарплаты Junior Python разработчиков.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -171,7 +171,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---18. Вывести имена и зарплаты Middle JS разработчиков
+--18. Вывести имена и зарплаты Middle JS разработчиков.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -187,7 +187,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---19. Вывести имена и зарплаты Senior Java разработчиков
+--19. Вывести имена и зарплаты Senior Java разработчиков.
 select employee, monthly_salary as salary 
 from salary s 
 join (select employee, salary_id
@@ -203,7 +203,7 @@ join (select employee, salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---20. Вывести зарплаты Junior QA инженеров
+--20. Вывести зарплаты Junior QA инженеров.
 select distinct monthly_salary as salary 
 from salary s 
 join (select salary_id
@@ -220,7 +220,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---21. Вывести среднюю зарплату всех Junior специалистов
+--21. Вывести среднюю зарплату всех Junior специалистов.
 select avg(distinct monthly_salary) as avg_salary 
 from salary s 
 join (select salary_id
@@ -236,7 +236,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---22. Вывести сумму зарплат JS разработчиков
+--22. Вывести сумму зарплат JS разработчиков.
 select sum(monthly_salary) as sum_salary 
 from salary s 
 join (select salary_id
@@ -252,7 +252,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---23. Вывести минимальную ЗП QA инженеров
+--23. Вывести минимальную ЗП QA инженеров.
 select min(monthly_salary) as min_salary 
 from salary s 
 join (select salary_id
@@ -268,7 +268,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---24. Вывести максимальную ЗП QA инженеров
+--24. Вывести максимальную ЗП QA инженеров.
 select max(monthly_salary) as max_salary 
 from salary s 
 join (select salary_id
@@ -284,7 +284,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---25. Вывести количество QA инженеров
+--25. Вывести количество QA инженеров.
 select count(role_name) 
 from roles r 
 join roles_employee re 
@@ -298,7 +298,7 @@ join roles_employee re
 on r.id = re.role_id 
 where role_name like '%Middle%';
 
---27. Вывести количество разработчиков
+--27. Вывести количество разработчиков.
 select count(role_name) 
 from roles r 
 join roles_employee re 
@@ -321,7 +321,7 @@ join (select salary_id
       on es.employee_id = emp.e_id) as emp_slr
 on s.id = emp_slr.salary_id;
 
---29. Вывести имена, должности и ЗП всех специалистов по возрастанию
+--29. Вывести имена, должности и ЗП всех специалистов по возрастанию.
 select employee, role_name as role, monthly_salary as salary
 from salary s 
 join (select employee, salary_id, role_name 
