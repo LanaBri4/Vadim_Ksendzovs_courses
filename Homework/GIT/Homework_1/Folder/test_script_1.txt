@@ -1,0 +1,8 @@
+#!/bin/bash
+/c/study/Vadim_Ksendzovs_courses/Homework/GIT/Homework_1/Folder/;
+mkdir First_1 Second_2 Third_3;
+cd First_1/;
+touch test_1.txt test_2.txt test_3.txt test_4.json test_5.json;
+ls -la;
+cd ..;
+mv First_1/test_1.txt Second_2;  mv First_1/test_2.txt Third_3; 
