@@ -1,0 +1,8 @@
+ <?xml version="1.0"?>
+<person>
+<First_name>Svetlana</First_name>
+<Last_name>Brilevich</Last_name>
+<Age>34</Age>
+<Pets>1</Pets>
+<Salary>700$</Salary>
+</person>
