@@ -309,4 +309,3 @@ insert into roles_employee (employee_id, role_id)
 		(41, 15),
 		(39, 4),
 		(65, 3);
-
